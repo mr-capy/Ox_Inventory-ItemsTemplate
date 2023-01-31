@@ -79,7 +79,7 @@ return {
     },
 
 	['dusche_beer'] = { -- Good ol imported beer from germany
-        label = 'Dusche Gold',
+        label = 'Dusche Beer',
         weight = 580,
         stack = true,
         close = true,
@@ -93,7 +93,7 @@ return {
     },
 
     ['stronzo_beer'] = { -- Good ol imported beer from italy
-        label = 'Stronzo',
+        label = 'Stronzo Beer',
         weight = 580,
         stack = true,
         close = true,
