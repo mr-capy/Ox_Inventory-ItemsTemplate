@@ -15,14 +15,26 @@ Also I didn't make any of the ox scripts nor am I part of the development team. 
 ##### Alcohol (with animations):
 * Rancho Beer
 * Dusche Beer
-* Beer
-* Beer
+* Stronzo Beer
+* Patriot Beer
 
 ##### General Items (most with animations):
-
+* Phone -*NPWD from [Project Error](https://github.com/project-error)*
+* Wallet - Server sided item for holding little card things
+* Bandage - Does what you think it does, I didn't edit it
+* Cigarette - Smoking animation, needs ptfx smoke
+* Vape - Smoking animation, needs ptfx smoke
+* Bodyarmor(1 ,2 ,3) - Varying levels of armor protection
+* Parachute - Does what you think it does, I didn't edit it
 
 ##### Weapons:
+* Pistol XM3 - *Los Santos Drug Wars Update*
+* Precision Rifle - *Criminal Enterprises Update*
+* Tactical Rifle - *Criminal Enterprises Update*
 
-
-## Planned & In Progress
+## Planned & In Progress (aside from simple food / drink)
 Items I'm working on getting to work right:
+* Effects for smoking / vaping
+* Weapon Tint Items
+* Clothing bag to use for player changing outfits
+* Bulk item that gives smaller items (Beer case = 12 beers)
