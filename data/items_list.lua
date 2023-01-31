@@ -251,7 +251,7 @@ return {
         description = "The root of all evil and payer of rent",
 	},
 
-    ['black_money'] = { -- Player currency
+    	['black_money'] = { -- Player currency
 		label = 'Dirty Money',
         weight = 2,
         description = "If you don't wash this, you're gonna be stinky",
