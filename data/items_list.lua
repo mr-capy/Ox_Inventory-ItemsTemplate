@@ -124,7 +124,7 @@ return {
                                         <! USABLE ITEMS !>
     -------------------------------------------------------------------------------- ]]--
 
-    ['phone'] = {
+    ['phone'] = { -- If you aren't using NPWD, remove the client section of this item
 		label = 'Phone',
 		weight = 190,
 		stack = false,
@@ -203,6 +203,7 @@ return {
 		label = 'Light Ballistic Vest',
 		weight = 3000,
 		stack = false,
+        description = "Bullts hurt a bit less with this",
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 6500
@@ -213,6 +214,7 @@ return {
 		label = 'Medium Ballistic Vest',
 		weight = 4500,
 		stack = false,
+        description = "Bullets hurt a lot less with this",
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 6500
@@ -223,6 +225,7 @@ return {
 		label = 'Heavy Ballistic Vest',
 		weight = 4500,
 		stack = false,
+        description = "Keep the extra bullets for personal vest flair",
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 6500
@@ -233,6 +236,7 @@ return {
 		label = 'Parachute',
 		weight = 8000,
 		stack = false,
+        description = "For your sake, I hope it opens at the last second",
 		client = {
 			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
 			usetime = 1500
@@ -242,7 +246,7 @@ return {
 	['lockpick'] = { -- Use for doors and cars
 		label = 'Lockpicks',
 		weight = 115,
-        description = "Modern problems require modern solutions",
+        description = "Modern problems require sneaky solutions",
 	},
 
 	['money'] = { -- Player currency
@@ -251,7 +255,7 @@ return {
         description = "The root of all evil and payer of rent",
 	},
 
-    	['black_money'] = { -- Player currency
+    ['black_money'] = { -- Player currency
 		label = 'Dirty Money',
         weight = 2,
         description = "If you don't wash this, you're gonna be stinky",
