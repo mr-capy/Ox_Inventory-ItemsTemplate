@@ -143,11 +143,11 @@ return {
 			end
 		}
 	},
-
-    ['wallet'] = { -- Use to hold licenses
-		label = 'Wallet',
+	
+    ['bandage'] = { -- Use to partially heal self
+		label = 'Bandage',
 		weight = 115,
-        description = "If you lose this, you're gonna be sorry",
+	description = "Yes, this definetly will heal that gunshot wound",
 		client = {
 			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
 			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
@@ -156,10 +156,10 @@ return {
 		}
 	},
 
-	['bandage'] = { -- Use to partially heal self
-		label = 'Bandage',
+    ['wallet'] = { -- Use to hold licenses
+		label = 'Wallet',
 		weight = 115,
-        description = "Yes, this definetly will heal that gunshot wound",
+        description = "If you lose this, you're gonna be sorry",
 		client = {
 			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
 			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
