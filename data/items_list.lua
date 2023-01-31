@@ -1,8 +1,8 @@
 return {
-	--[[ --------------------------------------------------------------------------------
+    --[[ --------------------------------------------------------------------------------
                                         <! FOOD !>
     -------------------------------------------------------------------------------- ]]--
-	['sandwich'] = { -- A simple sandwich for a simple day
+    ['sandwich'] = { -- A simple sandwich for a simple day
         label = 'Sandwich',
         weight = 350,
         stack = true,
@@ -16,7 +16,7 @@ return {
         },
     },
 
-	['burger'] = { -- A test hamburger that you can eat
+    ['burger'] = { -- A test hamburger that you can eat
         label = 'Hamburger',
         weight = 350,
         stack = true,
@@ -47,7 +47,7 @@ return {
         },
     },
 
-	['ejunk'] = { -- Drinking too much of this wont kill you. I think.
+    ['ejunk'] = { -- Drinking too much of this wont kill you. I think.
         label = 'Junk Energy',
         weight = 350,
         stack = true,
@@ -78,7 +78,7 @@ return {
         },
     },
 
-	['dusche_beer'] = { -- Good ol imported beer from germany
+    ['dusche_beer'] = { -- Good ol imported beer from germany
         label = 'Dusche Beer',
         weight = 580,
         stack = true,
@@ -120,145 +120,145 @@ return {
         },
     },
 
-	--[[ --------------------------------------------------------------------------------
+    --[[ --------------------------------------------------------------------------------
                                         <! USABLE ITEMS !>
     -------------------------------------------------------------------------------- ]]--
 
     ['phone'] = { -- If you aren't using NPWD, remove the client section of this item
-		label = 'Phone',
-		weight = 190,
-		stack = false,
-		consume = 0,
-		client = {
-			add = function(total)
-				if total > 0 then
-					pcall(function() return exports.npwd:setPhoneDisabled(false) end)
-				end
-			end,
+        label = 'Phone',
+        weight = 190,
+        stack = false,
+        consume = 0,
+        client = {
+            add = function(total)
+                if total > 0 then
+                    pcall(function() return exports.npwd:setPhoneDisabled(false) end)
+                end
+            end,
 
-			remove = function(total)
-				if total < 1 then
-					pcall(function() return exports.npwd:setPhoneDisabled(true) end)
-				end
-			end
-		}
-	},
-	
-    ['bandage'] = { -- Use to partially heal self
-		label = 'Bandage',
-		weight = 115,
-	description = "Yes, this definetly will heal that gunshot wound",
-		client = {
-			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
-			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
-			disable = { move = true, car = true, combat = true },
-			usetime = 2500,
-		}
-	},
+            remove = function(total)
+                if total < 1 then
+                    pcall(function() return exports.npwd:setPhoneDisabled(true) end)
+                end
+            end
+        }
+    },
 
     ['wallet'] = { -- Use to hold licenses
-		label = 'Wallet',
-		weight = 115,
+        label = 'Wallet',
+        weight = 115,
         description = "If you lose this, you're gonna be sorry",
-		client = {
-			anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
-			prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
-			disable = { move = true, car = true, combat = true },
-			usetime = 2500,
-		}
-	},
+        client = {
+            anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
+            prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+            disable = { move = true, car = true, combat = true },
+            usetime = 2500,
+        }
+    },
+
+    ['bandage'] = { -- Use to partially heal self
+        label = 'Bandage',
+        weight = 115,
+        description = "Yes, this definetly will heal that gunshot wound",
+        client = {
+            anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
+            prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+            disable = { move = true, car = true, combat = true },
+            usetime = 2500,
+        }
+    },
 
     ['cigarette'] = { -- social item that causes slight damage to health
-		label = 'Cigarettes',
-		weight = 115,
+        label = 'Cigarettes',
+        weight = 115,
         description = "These probably aren't good for you, but fuck it",
-		client = {
-			anim = { dict = 'amb@world_human_aa_smoke@male@idle_a', clip = 'idle_c', flag = 49 },
-			prop = { model = `prop_cs_ciggy_01`, 
+        client = {
+            anim = { dict = 'amb@world_human_aa_smoke@male@idle_a', clip = 'idle_c', flag = 49 },
+            prop = { model = `prop_cs_ciggy_01`, 
             pos = vec3(0.0, 0.0, 0.0), 
             rot = vec3(0.0, 0.0, 0.0), bone = 28422 },
-			disable = { move = false, car = false, combat = false },
-			usetime = 8000,
-		}
-	},
+            disable = { move = false, car = false, combat = false },
+            usetime = 8000,
+        }
+    },
 
     ['vape'] = { -- social item that causes slight damage to health
-		label = 'Vape',
-		weight = 115,
+        label = 'Vape',
+        weight = 115,
         description = "Vape-nash bruh, tastes like dissapointment",
         consume = 0,
         degrade = 60,
-		client = {
-			anim = { dict = 'amb@world_human_smoking@male@male_b@base', clip = 'base', flag = 49 },
-			prop = { model = `xm3_prop_xm3_vape_01a`, 
+        client = {
+            anim = { dict = 'amb@world_human_smoking@male@male_b@base', clip = 'base', flag = 49 },
+            prop = { model = `xm3_prop_xm3_vape_01a`, 
             pos = vec3(-0.02, -0.02, 0.02), 
             rot = vec3(70.0, 110.0, 10.0), bone = 28422 },
 
-			disable = { move = false, car = false, combat = false },
-			usetime = 7000,
-		}
-	},
+            disable = { move = false, car = false, combat = false },
+            usetime = 7000,
+        }
+    },
 
     ['bodyarmor_1'] = { --  Use to set body armor to 30%
-		label = 'Light Ballistic Vest',
-		weight = 3000,
-		stack = false,
+        label = 'Light Ballistic Vest',
+        weight = 3000,
+        stack = false,
         description = "Bullts hurt a bit less with this",
-		client = {
-			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
-			usetime = 6500
-		}
-	},
+        client = {
+            anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+            usetime = 6500
+        }
+    },
 
     ['bodyarmor_2'] = { --  Use to set body armor to 60%
-		label = 'Medium Ballistic Vest',
-		weight = 4500,
-		stack = false,
+        label = 'Medium Ballistic Vest',
+        weight = 4500,
+        stack = false,
         description = "Bullets hurt a lot less with this",
-		client = {
-			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
-			usetime = 6500
-		}
-	},
+        client = {
+            anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+            usetime = 6500
+        }
+    },
 
     ['bodyarmor_3'] = { --  Use to set body armor to 100%
-		label = 'Heavy Ballistic Vest',
-		weight = 4500,
-		stack = false,
+        label = 'Heavy Ballistic Vest',
+        weight = 4500,
+        stack = false,
         description = "Keep the extra bullets for personal vest flair",
-		client = {
-			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
-			usetime = 6500
-		}
-	},
+        client = {
+            anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+            usetime = 6500
+        }
+    },
 
-	['parachute'] = { -- Use to equip parachute tool
-		label = 'Parachute',
-		weight = 8000,
-		stack = false,
+    ['parachute'] = { -- Use to equip parachute tool
+        label = 'Parachute',
+        weight = 8000,
+        stack = false,
         description = "For your sake, I hope it opens at the last second",
-		client = {
-			anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
-			usetime = 1500
-		}
-	},
+        client = {
+            anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+            usetime = 1500
+        }
+    },
 
-	['lockpick'] = { -- Use for doors and cars
-		label = 'Lockpicks',
-		weight = 115,
+    ['lockpick'] = { -- Use for doors and cars
+        label = 'Lockpicks',
+        weight = 115,
         description = "Modern problems require sneaky solutions",
-	},
+    },
 
-	['money'] = { -- Player currency
-		label = 'Money',
+    ['money'] = { -- Player currency
+        label = 'Money',
         weight = 2,
         description = "The root of all evil and payer of rent",
-	},
+    },
 
     ['black_money'] = { -- Player currency
-		label = 'Dirty Money',
+        label = 'Dirty Money',
         weight = 2,
         description = "If you don't wash this, you're gonna be stinky",
-	},
+    },
 
 }
