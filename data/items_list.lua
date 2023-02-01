@@ -40,7 +40,7 @@ return {
         close = true,
         description = "Carbonized syrup is good for the soul",
         client = {
-            status = { thirst = 60000 },
+            status = { thirst = 20000 },
             anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
             prop = { model = 'prop_ecola_can', pos = vec3(0.025, 0.010, 0.05), rot = vec3(5.0, 5.0, -180.5) },
             usetime = 7500,
@@ -54,7 +54,7 @@ return {
         close = true,
         description = "Drinking too much of this wont kill you. I think.",
         client = {
-            status = { thirst = 60000 },
+            status = { thirst = 20000 },
             anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
             prop = { model = 'sf_prop_sf_can_01a', pos = vec3(0.025, 0.010, 0.05), rot = vec3(5.0, 5.0, -180.5) },
             usetime = 7500,
