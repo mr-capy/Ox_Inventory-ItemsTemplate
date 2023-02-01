@@ -182,6 +182,27 @@ return {
         }
     },
 
+    --[[
+    -- If you are not using the mpcristmas3 update, uncomment this and comment the one below
+    -- This uses the vape model that came out in the mpbattle update, with proper positioning
+    ['vape'] = { -- social item that causes slight damage to health
+        label = 'Vape',
+        weight = 115,
+        description = "Vape-nash bruh, tastes like dissapointment",
+        consume = 0,
+        degrade = 60,
+        client = {
+            anim = { dict = 'amb@world_human_smoking@male@male_b@base', clip = 'base', flag = 49 },
+            prop = { model = `ba_prop_battle_vape_01`, 
+            pos = vec3(-0.0290, 0.0070, -0.0050), 
+            rot = vec3(91.0, 270.0, -360.0), bone = 28422 },
+
+            disable = { move = false, car = false, combat = false },
+            usetime = 7000,
+        }
+    }, ]]
+
+    -- If you are using the mpchristmas3 update, you can leave this uncommented
     ['vape'] = { -- social item that causes slight damage to health
         label = 'Vape',
         weight = 115,

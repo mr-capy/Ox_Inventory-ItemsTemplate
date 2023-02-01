@@ -11,13 +11,6 @@
     ammoname = 'ammo-9', -- change the ammo if you need to
 },
 
-['WEAPON_PRECISIONRIFLE'] = { -- Criminal Enterprises Update
-    label = 'Precision Rifle',
-    weight = 4800,
-    durability = 0.4,
-    ammoname = 'ammo-sniper' -- change the ammo if you need to
-},
-
 ['WEAPON_TACTICALRIFLE'] = { -- Criminal Enterprises Update
     label = 'Service Carbine',
     weight = 3400,
