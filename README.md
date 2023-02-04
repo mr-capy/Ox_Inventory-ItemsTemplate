@@ -39,3 +39,5 @@ Items I'm working on getting to work right:
 * Weapon Tint Items
 * Clothing bag to use for player changing outfits
 * Bulk item that gives smaller items (Beer case = 12 beers)
+* Police Badges that can be shown when used
+* Camera Item (idk what it would do but it could be neato)
