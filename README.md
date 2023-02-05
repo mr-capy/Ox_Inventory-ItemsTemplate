@@ -20,10 +20,8 @@ Items I'm working on getting to work right:
 ##### Consumables (with animations & images):
 * Sandwich
 * Hamburger
-
 * eCola
 * Junk Energy Drink
-
 * Rancho Beer
 * Dusche Beer
 * Stronzo Beer

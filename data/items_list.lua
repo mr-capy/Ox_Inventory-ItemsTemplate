@@ -150,7 +150,7 @@ return {
         description = "If you lose this, you're gonna be sorry",
         client = {
             anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
-            prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+            prop = { model = 'prop_rolled_sock_02', pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
             disable = { move = true, car = true, combat = true },
             usetime = 2500,
         }
@@ -162,7 +162,7 @@ return {
         description = "Yes, this definetly will heal that gunshot wound",
         client = {
             anim = { dict = 'missheistdockssetup1clipboard@idle_a', clip = 'idle_a', flag = 49 },
-            prop = { model = `prop_rolled_sock_02`, pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
+            prop = { model = 'prop_rolled_sock_02', pos = vec3(-0.14, -0.14, -0.08), rot = vec3(-50.0, -50.0, 0.0) },
             disable = { move = true, car = true, combat = true },
             usetime = 2500,
         }
@@ -174,7 +174,7 @@ return {
         description = "These probably aren't good for you, but fuck it",
         client = {
             anim = { dict = 'amb@world_human_aa_smoke@male@idle_a', clip = 'idle_c', flag = 49 },
-            prop = { model = `prop_cs_ciggy_01`, 
+            prop = { model = 'prop_cs_ciggy_01', 
             pos = vec3(0.0, 0.0, 0.0), 
             rot = vec3(0.0, 0.0, 0.0), bone = 28422 },
             disable = { move = false, car = false, combat = false },
@@ -211,7 +211,7 @@ return {
         degrade = 60,
         client = {
             anim = { dict = 'amb@world_human_smoking@male@male_b@base', clip = 'base', flag = 49 },
-            prop = { model = `xm3_prop_xm3_vape_01a`, 
+            prop = { model = 'xm3_prop_xm3_vape_01a', 
             pos = vec3(-0.02, -0.02, 0.02), 
             rot = vec3(70.0, 110.0, 10.0), bone = 28422 },
 
@@ -288,8 +288,12 @@ return {
 
 
 
+
+
+
     --[[ --------------------------------------------------------------------------------
                                         <! TESTING ITEMS !>
+                                        <! POLICE BADGES !>
     -------------------------------------------------------------------------------- ]]--
 
     -- FIB / BCSO / LSSD / LSPD / SAFD / Etc.
@@ -299,7 +303,80 @@ return {
         description = "For official use by FIB Agents only",
         client = {
             anim = { dict = 'paper_1_rcm_alt1-8', clip = 'player_one_dual-8', flag = 49 },
-            prop = { model = `prop_cs_ciggy_01`, 
+            prop = { model = 'prop_cs_ciggy_01', 
+            pos = vec3(0.06, 0.021, -0.04), 
+            rot = vec3(-90.0, -180.0, 78.0), bone = 28422 },
+            disable = { move = false, car = false, combat = false },
+            usetime = 8000,
+        }
+    },
+
+    ['badge_bcso'] = { -- idea: Player uses item to show badge prop
+        label = 'BCSO Badge',
+        weight = 444,
+        description = "For official use by BCSO Deputies only",
+        client = {
+            anim = { dict = 'paper_1_rcm_alt1-8', clip = 'player_one_dual-8', flag = 49 },
+            prop = { model = 'prop_cs_ciggy_01', 
+            pos = vec3(0.06, 0.021, -0.04), 
+            rot = vec3(-90.0, -180.0, 78.0), bone = 28422 },
+            disable = { move = false, car = false, combat = false },
+            usetime = 8000,
+        }
+    },
+
+    ['badge_lssd'] = { -- idea: Player uses item to show badge prop
+        label = 'LSSD Badge',
+        weight = 444,
+        description = "For official use by LSSD Deputies only",
+        client = {
+            anim = { dict = 'paper_1_rcm_alt1-8', clip = 'player_one_dual-8', flag = 49 },
+            prop = { model = 'prop_cs_ciggy_01', 
+            pos = vec3(0.06, 0.021, -0.04), 
+            rot = vec3(-90.0, -180.0, 78.0), bone = 28422 },
+            disable = { move = false, car = false, combat = false },
+            usetime = 8000,
+        }
+    },
+
+    ['badge_lspd'] = { -- idea: Player uses item to show badge prop
+        label = 'LSPD Badge',
+        weight = 444,
+        description = "For official use by LSPD Officers only",
+        client = {
+            anim = { dict = 'paper_1_rcm_alt1-8', clip = 'player_one_dual-8', flag = 49 },
+            prop = { model = 'prop_cs_ciggy_01', 
+            pos = vec3(0.06, 0.021, -0.04), 
+            rot = vec3(-90.0, -180.0, 78.0), bone = 28422 },
+            disable = { move = false, car = false, combat = false },
+            usetime = 8000,
+        }
+    },
+
+
+
+
+
+
+
+
+
+    --[[ --------------------------------------------------------------------------------
+                                        <! TESTING ITEMS !>
+                                        <! OUTFITTER BAG !>
+    -------------------------------------------------------------------------------- ]]--
+
+    -- All players
+    ['outfit_bag'] = { -- idea: Player uses item to open the outfit menu
+        label = 'Outfit Bag',
+        weight = 1250,
+        consume = 1,
+        stack = true,
+        close = true,
+        description = "When you gotta bring out the new drip",
+        client = {
+            anim = { dict = 'paper_1_rcm_alt1-8', clip = 'player_one_dual-8', flag = 49 },
+            prop = { model = 'prop_cs_ciggy_01', 
             pos = vec3(0.06, 0.021, -0.04), 
             rot = vec3(-90.0, -180.0, 78.0), bone = 28422 },
             disable = { move = false, car = false, combat = false },
