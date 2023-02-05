@@ -298,10 +298,10 @@ return {
         weight = 444,
         description = "For official use by FIB Agents only",
         client = {
-            anim = { dict = 'amb@world_human_aa_smoke@male@idle_a', clip = 'idle_c', flag = 49 },
+            anim = { dict = 'paper_1_rcm_alt1-8', clip = 'player_one_dual-8', flag = 49 },
             prop = { model = `prop_cs_ciggy_01`, 
-            pos = vec3(0.0, 0.0, 0.0), 
-            rot = vec3(0.0, 0.0, 0.0), bone = 28422 },
+            pos = vec3(0.06, 0.021, -0.04), 
+            rot = vec3(-90.0, -180.0, 78.0), bone = 28422 },
             disable = { move = false, car = false, combat = false },
             usetime = 8000,
         }

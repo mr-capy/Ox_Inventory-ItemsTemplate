@@ -8,15 +8,22 @@ I'm here for the community and I support the idea to *learn* how to do these thi
 Download here
 # Items Template [Github](https://github.com/MIAgimir/Ox_Inventory-ItemsTemplate)
 
-##### Foods (with animations & images):
+## Planned & In Progress (aside from simple food / drink)
+Items I'm working on getting to work right:
+* Effects for smoking / vaping
+* Weapon Tint Items
+* Clothing bag to use for player changing outfits
+* Bulk item that gives smaller items (Beer case = 12 beers)
+* Police Badges that can be shown when used
+* Camera Item (idk what it would do but it could be neato)
+
+##### Consumables (with animations & images):
 * Sandwich
 * Hamburger
 
-##### Drinks (with animations & images):
 * eCola
 * Junk Energy Drink
 
-##### Alcohol (with animations & images):
 * Rancho Beer
 * Dusche Beer
 * Stronzo Beer
@@ -34,12 +41,3 @@ Download here
 ##### Weapons:
 * Pistol XM3 - *Los Santos Drug Wars Update*
 * Tactical Rifle - *Criminal Enterprises Update*
-
-## Planned & In Progress (aside from simple food / drink)
-Items I'm working on getting to work right:
-* Effects for smoking / vaping
-* Weapon Tint Items
-* Clothing bag to use for player changing outfits
-* Bulk item that gives smaller items (Beer case = 12 beers)
-* Police Badges that can be shown when used
-* Camera Item (idk what it would do but it could be neato)
