@@ -282,4 +282,29 @@ return {
         description = "If you don't wash this, you're gonna be stinky",
     },
 
+
+
+
+
+
+
+    --[[ --------------------------------------------------------------------------------
+                                        <! TESTING ITEMS !>
+    -------------------------------------------------------------------------------- ]]--
+
+    -- FIB / BCSO / LSSD / LSPD / SAFD / Etc.
+    ['badge_fib'] = { -- idea: Player uses item to show badge prop
+        label = 'FIB Badge',
+        weight = 444,
+        description = "For official use by FIB Agents only",
+        client = {
+            anim = { dict = 'amb@world_human_aa_smoke@male@idle_a', clip = 'idle_c', flag = 49 },
+            prop = { model = `prop_cs_ciggy_01`, 
+            pos = vec3(0.0, 0.0, 0.0), 
+            rot = vec3(0.0, 0.0, 0.0), bone = 28422 },
+            disable = { move = false, car = false, combat = false },
+            usetime = 8000,
+        }
+    },
+
 }

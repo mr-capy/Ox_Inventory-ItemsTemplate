@@ -5,6 +5,9 @@ All I've done is make the items and make most of them work like they should. I d
 
 I'm here for the community and I support the idea to *learn* how to do these things on your own. It's the best way to make sure you don't waste any time, money, or get scammed.I'm also going to update this as I work it for my own server, so hopefully this can give you some enrichment for your server(s). I'm also open to ideas, cause that sounds fun.
 
+Download here
+# Items Template [Github](https://github.com/MIAgimir/Ox_Inventory-ItemsTemplate)
+
 ##### Foods (with animations & images):
 * Sandwich
 * Hamburger
@@ -30,7 +33,6 @@ I'm here for the community and I support the idea to *learn* how to do these thi
 
 ##### Weapons:
 * Pistol XM3 - *Los Santos Drug Wars Update*
-* Precision Rifle - *Criminal Enterprises Update*
 * Tactical Rifle - *Criminal Enterprises Update*
 
 ## Planned & In Progress (aside from simple food / drink)
